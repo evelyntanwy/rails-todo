@@ -5,9 +5,11 @@
 <div id="tasks">
   <% @tasks.each do |task| %>
     <%= render task %>
+    <tr>
     <p>
       <%= link_to "Show this task", task %>
     </p>
+    <tr>
   <% end %>
 </div>
 

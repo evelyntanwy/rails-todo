@@ -13,28 +13,25 @@
 
   <div>
     <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, size: 40 %>
   </div>
 
   <div>
     <%= form.label :description, style: "display: block" %>
-    <%= form.text_area :description %>
+    <%= form.text_area :description, cols: 80, rows:20 %>
   </div>
 
   <div>
-    <%= form.label :state, style: "display: block" %>
-    <%= form.number_field :state %>
+    <%# <%= form.label :state, style: "display: block" %> 
+    <%# <%= form.number_field :state %> 
   </div>
 
   <div>
-    <%= form.label :due_at, style: "display: block" %>
-    <%= form.datetime_field :due_at %>
+    <%# <%= form.label :due_at, style: "display: block" %>
+    <%# <%= form.datetime_field :due_at %>
   </div>
 
-  <div>
-    <%= form.label :deleted_at, style: "display: block" %>
-    <%= form.datetime_field :deleted_at %>
-  </div>
+
 
   <div>
     <%= form.submit %>
